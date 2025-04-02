@@ -13,6 +13,9 @@ export default defineConfig([
     files: ["**/*.{js,mjs,cjs,ts}"],
     plugins: { js },
     extends: ["js/recommended"],
+    rules: {
+      "max-params": ["error", 4],
+    },
   },
   tseslint.configs.recommended,
 ]);
