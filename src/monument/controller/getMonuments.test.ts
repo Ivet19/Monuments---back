@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import MonumentController from "./monumentController.js";
+import MonumentController from "./MonumentController.js";
 import Monument from "../Monument.js";
 
 describe("Given the getMonuments function", () => {
