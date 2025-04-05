@@ -23,14 +23,14 @@ const statueOfLiberty = new Monument(
 );
 
 const alhambra = new Monument(
-  "Statue of Liberty",
+  "Alhambra",
   "A mesmerizing Moorish palace and fortress with intricate Islamic art in Granada, Spain",
   "https://unsplash.com/photos/9ZlZ2C8z5T4",
   { country: "Spain", city: "Granada" },
 );
 
 const bigBen = new Monument(
-  "Statue of Liberty",
+  "Big Ben",
   "An iconic clock tower marking London's skyline with its timeless chimes",
   "https://es.wikipedia.org/wiki/Big_Ben#/media/Archivo:Palace_of_Westminster,_London_-_Feb_2007.jpg",
   { country: "England", city: "London" },
