@@ -9,7 +9,7 @@ describe("Given the Eiffel Tower", () => {
       });
       const expectedCity = "Paris";
 
-      const actualCity = eiffelTower.location.city;
+      const actualCity = eiffelTower.city;
 
       expect(actualCity).toBe(expectedCity);
     });
@@ -21,7 +21,7 @@ describe("Given the Eiffel Tower", () => {
       });
       const expectedCountry = "France";
 
-      const actualCountry = eiffelTower.location.country;
+      const actualCountry = eiffelTower.country;
 
       expect(actualCountry).toBe(expectedCountry);
     });
