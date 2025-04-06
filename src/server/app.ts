@@ -9,11 +9,15 @@ const app = express();
 
 app.use(morgan("dev"));
 
+app.use(express.json());
+
 app.use(cors({ origin: true, credentials: true }));
 
 app.get("/", checkHealthStatus);
 
 app.use("/monuments", monumentsRouter);
+
+app.post("/monuments/add", monumentsRouter);
 
 app.use(handleEndpointNotFound);
 

@@ -7,5 +7,6 @@ const monumentsRouter = Router();
 const monumentController = new MonumentController(monuments);
 
 monumentsRouter.get("/", monumentController.getMonuments);
+monumentsRouter.post("/add", monumentController.addMonument);
 
 export default monumentsRouter;
