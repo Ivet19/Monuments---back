@@ -6,7 +6,6 @@ export interface MonumentStructure {
   country: string;
   city: string;
 }
-
 export interface Location {
   country: string;
   city: string;
