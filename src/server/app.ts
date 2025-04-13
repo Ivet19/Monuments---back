@@ -17,8 +17,6 @@ app.get("/", checkHealthStatus);
 
 app.use("/monuments", monumentsRouter);
 
-app.post("/monuments/add", monumentsRouter);
-
 app.use(handleEndpointNotFound);
 
 export default app;
