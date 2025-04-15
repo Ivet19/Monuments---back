@@ -6,7 +6,7 @@ import {
   eiffelTower,
 } from "../../data/fixtures.js";
 
-describe("Given the AddMonument function", () => {
+describe("Given the addMonument method", () => {
   let monuments = [simpsonsHouse, sagradaFamilia];
 
   let monumentController = new MonumentController(monuments);
@@ -77,10 +77,9 @@ describe("Given the AddMonument function", () => {
       expect(res.status).toHaveBeenCalledWith(expectedStatusCode);
     });
 
-    test("Then it should call the response's method jason with message 'Monument Sagrada Familia already exists. Please, choose a different one.'", () => {
+    test("Then it should call the response's method jason with message 'Monument Sagrada Familia already exists.'", () => {
       const expectedErrorMessage = {
-        error:
-          "Monument Sagrada Familia already exists. Please, choose a different one.",
+        error: "Monument Sagrada Familia already exists.",
       };
 
       monumentController.addMonument(req as Request, res as Response);
